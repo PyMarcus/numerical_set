@@ -115,7 +115,20 @@ class Conjuntos{
 			
 		}
 
-		std::vector<int> _sum();
+		std::vector<int> _sum()
+		{
+			std::vector<int> aux;
+
+			for(int element: get_a()){
+				aux.push_back(element);
+			}
+
+			for(int element: get_b()){
+				aux.push_back(element);
+			}
+
+			return aux;
+		}
 
 		std::vector<int> _cartesian_product();
 
